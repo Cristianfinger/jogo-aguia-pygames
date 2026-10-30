@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Águia — Direção de arte v4 (visão de cima)</title>
+<style>
+:root{--bg:#f4f7fb;--fg:#17202e;--card:#fff;--mut:#5b6678;--line:#dde4ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1520;--fg:#e8eef8;--card:#18212f;--mut:#9aa8bd;--line:#2a3547}}
+:root[data-theme="dark"]{--bg:#0f1520;--fg:#e8eef8;--card:#18212f;--mut:#9aa8bd;--line:#2a3547}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.7rem;margin:0 0 4px}
+h2{font-size:1.1rem;margin:0 0 10px}
+p{margin:0 0 10px;color:var(--mut)}
+.layout{display:grid;gap:24px;grid-template-columns:1fr;margin-top:16px}
+@media(min-width:820px){.layout{grid-template-columns:minmax(300px,380px) 1fr;align-items:start}}
+.hero{width:100%;max-width:420px;height:auto;display:block;margin:0 auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure svg{display:block;width:100%;height:auto;background:linear-gradient(#5f9655,#487a42);padding:10px}
+figcaption{padding:8px 10px;font-size:.85rem}
+figcaption b{display:block}
+figcaption span{color:var(--mut)}
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:28px}
+.themes div{height:96px;border-radius:12px;padding:10px;color:#fff;font-size:.8rem;display:flex;flex-direction:column;justify-content:flex-end;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.themes b{font-size:.9rem}.themes div{position:relative;overflow:hidden}.themes svg{position:absolute;inset:0;width:100%;height:100%}.themes b,.themes span{position:relative}
+.eagle{--wc:#5a3a1e;--wl:#7d5530;--bc:#5a3a1e;--hc:#f6f1e7;--tc:#f6f1e7;--ik:#f2c230}
+.hawk{--wc:#46372a;--wl:#6a5640;--bc:#43362a;--hc:#6b5a48;--tc:#a9552b;--ik:#ffb020;--bo:.5}
+.storm{--c1:#252a38;--c2:#4a5268;--hi:.25;--gl:.8}
+.white{--c1:#cfd9e6;--c2:#fff;--gl:0}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gSh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity=".38"/></linearGradient>
+<linearGradient id="gSn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#c5d3e3"/></linearGradient>
+<linearGradient id="gTl" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff9a3c" stop-opacity=".95"/><stop offset="1" stop-color="#ff5a1a" stop-opacity="0"/></linearGradient>
+<radialGradient id="gFire"><stop offset="0" stop-color="#ffd36a"/><stop offset=".5" stop-color="#ff7a24" stop-opacity=".65"/><stop offset="1" stop-color="#ff5a1a" stop-opacity="0"/></radialGradient>
+<radialGradient id="gRock" cx=".35" cy=".35"><stop offset="0" stop-color="#9a7a66"/><stop offset="1" stop-color="#34241f"/></radialGradient>
+<radialGradient id="gGl"><stop offset="0" stop-color="#ffe680"/><stop offset="1" stop-color="#ffe680" stop-opacity="0"/></radialGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="5"/><feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer></filter>
+<filter id="bl"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="ter" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".03 .02" numOctaves="4" seed="7"/><feColorMatrix values="0 0 0 0 .1  0 .9 0 0 -.12  0 0 0 0 .08  0 0 0 0 1"/></filter>
+
+
+<linearGradient id="gBk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset="1" stop-color="#d89a10"/></linearGradient>
+<radialGradient id="gFl"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#bcd8ff" stop-opacity=".7"/><stop offset="1" stop-color="#6a9cff" stop-opacity="0"/></radialGradient>
+<linearGradient id="gHz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9cdf0" stop-opacity=".28"/><stop offset=".55" stop-color="#cfe3f5" stop-opacity="0"/></linearGradient>
+<radialGradient id="gSun" cx=".95" cy="0" r=".9"><stop offset="0" stop-color="#fff0c0" stop-opacity=".75"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient>
+<filter id="ft" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".5 .12" numOctaves="3"/><feColorMatrix type="saturate" values="0" result="g"/><feComponentTransfer in="g" result="g2"><feFuncR type="linear" slope=".5" intercept=".62"/><feFuncG type="linear" slope=".5" intercept=".62"/><feFuncB type="linear" slope=".5" intercept=".62"/></feComponentTransfer><feBlend in="SourceGraphic" in2="g2" mode="multiply" result="b"/><feComposite in="b" in2="SourceAlpha" operator="in"/></filter>
+<filter id="cl" x="-30%" y="-30%" width="160%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".026" numOctaves="5" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="38" result="d"/><feGaussianBlur in="d" stdDeviation="2.2"/></filter>
+<filter id="ci" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".012 .02" numOctaves="4" seed="9"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 2.6 0 0 0 -1.3"/></filter>
+<filter id="ter2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".006 .01" numOctaves="3" seed="21"/><feColorMatrix values="0 0 0 0 .62 0 0 0 0 .5 0 0 0 0 .3 2.6 0 0 0 -1.15"/></filter>
+<filter id="fl" x="-40%" y="-20%" width="180%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".05 .02" numOctaves="3" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="26"/><feGaussianBlur stdDeviation="1.6"/></filter>
+<g id="wg"></g><g id="tl"></g>
+<symbol id="bird" viewBox="0 0 200 164"><use href="#wg"/><use href="#wg" transform="translate(200 0) scale(-1 1)"/><use href="#tl"/><use href="#bb"/></symbol>
+<symbol id="bird2" viewBox="0 0 200 164"><g transform="translate(22 0) scale(.78 1)"><use href="#wg"/><use href="#wg" transform="translate(200 0) scale(-1 1)"/></g><use href="#tl"/><use href="#bb"/></symbol>
+<symbol id="cloud" viewBox="0 0 200 150"><g filter="url(#cl)"><g style="fill:var(--c1)"><circle cx="60" cy="86" r="40"/><circle cx="112" cy="68" r="46"/><circle cx="152" cy="96" r="36"/><circle cx="100" cy="106" r="42"/><circle cx="50" cy="112" r="28"/></g><g style="fill:var(--c2)" opacity=".8"><circle cx="54" cy="72" r="28"/><circle cx="104" cy="50" r="34"/><circle cx="146" cy="82" r="23"/><circle cx="90" cy="88" r="26"/></g><g fill="#fff" style="opacity:var(--hi,.9)"><circle cx="48" cy="62" r="13"/><circle cx="98" cy="38" r="16"/><circle cx="138" cy="72" r="11"/></g></g><circle cx="108" cy="82" r="46" fill="url(#gGl)" style="opacity:var(--gl,0)"/></symbol>
+<symbol id="strike" viewBox="0 0 120 200"><circle cx="60" cy="150" r="46" fill="url(#gFl)"/><circle cx="60" cy="150" r="34" fill="none" stroke="#ffe14d" stroke-width="2.5" stroke-dasharray="7 5"/><g id="stk" fill="none" stroke-linejoin="round" stroke-linecap="round"></g></symbol>
+<symbol id="meteor" viewBox="0 0 120 200"><path d="M38 160C24 110 44 50 60 4 76 50 96 110 82 160Z" fill="url(#gTl)" filter="url(#fl)"/><path d="M48 170C40 120 52 70 60 30 68 70 80 120 72 170Z" fill="#ffe9a0" opacity=".75" filter="url(#fl)"/><circle cx="60" cy="158" r="42" fill="url(#gFire)"/><circle cx="60" cy="158" r="24" fill="#6b5446" filter="url(#rk)"/><circle cx="60" cy="158" r="25" fill="none" stroke="#ff8a2a" stroke-width="3" opacity=".8" filter="url(#bl)"/></symbol>
+
+<linearGradient id="gFe" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".38"/><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".22"/></linearGradient>
+<pattern id="pf1" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><rect width="6" height="6" fill="#cdb85e"/><rect width="6" height="2.2" fill="#a8943f"/></pattern>
+<pattern id="pf2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)"><rect width="6" height="6" fill="#7fa64c"/><rect width="6" height="2.2" fill="#608a3a"/></pattern>
+<pattern id="pf3" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(8)"><rect width="6" height="6" fill="#8d6c46"/><rect width="6" height="2.2" fill="#6f5236"/></pattern>
+<filter id="fo" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".011" numOctaves="3" seed="11" result="m"/><feColorMatrix in="m" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4.5 0 0 0 -2.1" result="ma"/><feTurbulence type="turbulence" baseFrequency=".1" numOctaves="3" seed="2" result="t"/><feColorMatrix in="t" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0" result="ta"/><feDiffuseLighting in="ta" surfaceScale="5" diffuseConstant="1.25" lighting-color="#4d8a37"><feDistantLight azimuth="225" elevation="42"/></feDiffuseLighting><feComposite in2="ma" operator="in"/></filter>
+<filter id="mf" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="3" seed="4" result="e"/><feDisplacementMap in="SourceGraphic" in2="e" scale="18" result="g"/><feGaussianBlur in="g" stdDeviation="9" result="d"/><feTurbulence type="turbulence" baseFrequency=".04" numOctaves="5" seed="8" result="t"/><feColorMatrix in="t" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0 0 0 0" result="ta"/><feComposite in="d" in2="ta" operator="arithmetic" k2=".62" k3=".28" result="h"/><feDiffuseLighting in="h" surfaceScale="30" diffuseConstant="1.6" lighting-color="#fff" result="lt"><feDistantLight azimuth="225" elevation="32"/></feDiffuseLighting><feColorMatrix in="h" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1" result="hh"/><feComponentTransfer in="hh" result="rp"><feFuncR type="table" tableValues=".22 .32 .46 .54 .60 .80 .95"/><feFuncG type="table" tableValues=".33 .45 .42 .46 .55 .84 .98"/><feFuncB type="table" tableValues=".16 .20 .26 .38 .52 .88 1"/></feComponentTransfer><feComposite in="rp" in2="lt" operator="arithmetic" k1="1.9" result="c"/><feComposite in="c" in2="g" operator="in"/></filter>
+<filter id="dn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".008 .035" numOctaves="4" seed="3"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0"/><feDiffuseLighting surfaceScale="9" diffuseConstant="1.1" lighting-color="#f0cf94"><feDistantLight azimuth="200" elevation="38"/></feDiffuseLighting></filter>
+<filter id="sn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".014" numOctaves="5" seed="6"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0"/><feDiffuseLighting surfaceScale="6" diffuseConstant="1.15" lighting-color="#eef5ff"><feDistantLight azimuth="225" elevation="40"/></feDiffuseLighting></filter>
+<filter id="lv" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="4" seed="9" result="t"/><feColorMatrix in="t" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0" result="a"/><feDiffuseLighting in="a" surfaceScale="7" lighting-color="#6a5650" result="lit"><feDistantLight azimuth="225" elevation="40"/></feDiffuseLighting><feTurbulence type="turbulence" baseFrequency=".016" numOctaves="3" seed="14" result="v"/><feColorMatrix in="v" values="0 0 0 0 1 0 0 0 0 .45 0 0 0 0 .08 -9 0 0 0 1.3" result="vc"/><feGaussianBlur in="vc" stdDeviation="1.2" result="vb"/><feMerge><feMergeNode in="lit"/><feMergeNode in="vb"/></feMerge></filter>
+<g id="bb"><ellipse cx="100" cy="84" rx="15" ry="38" style="fill:var(--bc)" filter="url(#ft)"/><g id="bs"></g><ellipse cx="93" cy="78" rx="5" ry="26" fill="#fff" opacity=".08"/><ellipse cx="100" cy="46" rx="11.5" ry="14" style="fill:var(--hc)" filter="url(#ft)"/><path d="M94 35C95 19 100 10 100 10C100 10 105 19 106 35C103 31 97 31 94 35Z" fill="url(#gBk)"/><path d="M95 33Q100 28 105 33" stroke="#9a6a08" fill="none"/><circle cx="93.5" cy="43" r="3" style="fill:var(--ik)"/><circle cx="106.5" cy="43" r="3" style="fill:var(--ik)"/><circle cx="93.5" cy="43" r="1.4"/><circle cx="106.5" cy="43" r="1.4"/><path d="M88 38 97 42M112 38 103 42" stroke="#000" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/><path d="M84 122Q100 130 116 122" stroke="#000" style="stroke-opacity:var(--bo,0)" stroke-width="3" fill="none"/><path d="M82 136Q100 144 118 136" stroke="#000" style="stroke-opacity:var(--bo,0)" stroke-width="3" fill="none"/></g>
+<symbol id="mt" viewBox="0 0 200 200"><g filter="url(#mf)"><ellipse cx="100" cy="100" rx="90" ry="80" opacity=".5"/><ellipse cx="100" cy="100" rx="82" ry="24" transform="rotate(28 100 100)"/><ellipse cx="96" cy="104" rx="72" ry="22" transform="rotate(-38 96 104)"/><ellipse cx="104" cy="96" rx="60" ry="20" transform="rotate(86 104 96)"/><ellipse cx="100" cy="100" rx="40" ry="34"/></g></symbol>
+<symbol id="rabbit" viewBox="0 -8 60 98"><g filter="url(#ft)"><ellipse cx="14" cy="78" rx="5.5" ry="12" transform="rotate(14 14 78)" fill="#8f6e48"/><ellipse cx="46" cy="78" rx="5.5" ry="12" transform="rotate(-14 46 78)" fill="#8f6e48"/><ellipse cx="30" cy="58" rx="18" ry="24" fill="#a98763"/><ellipse cx="30" cy="68" rx="20" ry="15" fill="#a98763"/><circle cx="30" cy="83" r="5.5" fill="#f4f1ea"/><ellipse cx="30" cy="54" rx="6" ry="20" fill="#7c5e3e"/><ellipse cx="19" cy="56" rx="4" ry="14" fill="#c9ae85" opacity=".7"/><ellipse cx="41" cy="56" rx="4" ry="14" fill="#c9ae85" opacity=".7"/><ellipse cx="22" cy="10" rx="4.2" ry="14" transform="rotate(-12 22 10)" fill="#9b7a56"/><ellipse cx="38" cy="10" rx="4.2" ry="14" transform="rotate(12 38 10)" fill="#9b7a56"/><ellipse cx="22" cy="11" rx="1.9" ry="10" transform="rotate(-12 22 11)" fill="#e0a0ae" opacity=".85"/><ellipse cx="38" cy="11" rx="1.9" ry="10" transform="rotate(12 38 11)" fill="#e0a0ae" opacity=".85"/><ellipse cx="30" cy="31" rx="11" ry="12" fill="#b8936a"/><ellipse cx="30" cy="25" rx="5.5" ry="5" fill="#d9c09a"/></g><circle cx="30" cy="20.5" r="1.9" fill="#e58aa0"/><circle cx="22.5" cy="28" r="2.2" fill="#1a1210"/><circle cx="37.5" cy="28" r="2.2" fill="#1a1210"/><circle cx="23" cy="27.3" r=".75" fill="#fff"/><circle cx="38" cy="27.3" r=".75" fill="#fff"/><path d="M26 22 15 19M26 23 14 23M34 22 45 19M34 23 46 23" stroke="#fff" stroke-opacity=".65" stroke-width=".5"/></symbol>
+<symbol id="gem" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="currentColor" opacity=".25"/><path d="M14 2h12l12 12v12L26 38H14L2 26V14Z" fill="currentColor"/><path d="M16 10h8l6 6v8l-6 6h-8l-6-6v-8Z" fill="#fff" opacity=".35"/><path d="M14 2 16 10M26 2 24 10M38 14 30 16M38 26 30 24M26 38 24 30M14 38 16 30M2 26 10 24M2 14 10 16" stroke="#fff" stroke-opacity=".6" fill="none"/><path d="M14 2h12l12 12-8 2-6-6h-8l-6 6-8-2Z" fill="#fff" opacity=".25"/><path d="M12 10l2-5 2 5 5 2-5 2-2 5-2-5-5-2Z" fill="#fff" opacity=".9" transform="scale(.5) translate(14 14)"/></symbol>
+<symbol id="heart" viewBox="0 0 32 30"><path d="M16 29C4 20 1 14 1 9a8 8 0 0 1 15-3 8 8 0 0 1 15 3c0 5-3 11-15 20z" fill="#ff4d6d" stroke="#fff" stroke-width="1.5"/><path d="M8 8a4 4 0 0 1 5-2" stroke="#fff" stroke-opacity=".7" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+<defs id="fd"></defs></defs></svg>
+<script>
+(function(){
+const seed=n=>()=>(n=n*16807%2147483647)/2147483647;
+let R=seed(11);
+const j=(v,k)=>v+(R()-.5)*k;
+const F=(x,y,a,L,w,c)=>{L=j(L,L*.12);a=j(a,3);const d=`M0 0C${L*.3} ${-w} ${L*.75} ${-w*.9} ${L} 0C${L*.75} ${w*.9} ${L*.3} ${w} 0 0Z`;return `<g transform="translate(${x} ${y}) rotate(${a})"><path d="${d}" style="fill:${c||'var(--wc)'}"/><path d="${d}" fill="url(#gFe)" stroke="#000" stroke-opacity=".4" stroke-width=".5"/><path d="M0 0H${L*.94}" stroke="#000" stroke-opacity=".3" stroke-width=".6"/></g>`};
+let w='',t='',b='',i,r,c;
+for(i=0;i<12;i++)w+=F(52+i*3.3,72,106-i*1.4,27-i*.2,4.7);
+for(i=0;i<9;i++)w+=F(40+i*2,58+i*1.4,178-i*5.4,50-i*2.5,4.6);
+for(i=0;i<10;i++)w+=F(88-i*7,68-i*.5,94,17,5.6);
+for(i=0;i<10;i++)w+=F(88-i*7,62-i*1,94,13,5.2,'var(--wl)');
+for(i=0;i<10;i++)w+=F(88-i*7,56-i*1.3,94,9,4.8,'var(--wl)');
+w+='<path d="M90 60C66 46 34 42 4 52L8 58C34 50 64 56 90 66Z" style="fill:var(--wl)" stroke="#000" stroke-opacity=".3" stroke-width=".5"/>';
+for(i=0;i<12;i++)t+=F(100,106,76+i*2.5,52-Math.abs(i-5.5)*2.2,4.6,'var(--tc)');
+for(r=0;r<7;r++)for(c=-1;c<=1;c++)b+=F(100+c*6+(r%2)*3,62+r*7,90,11,4.4,'var(--wl)');
+document.getElementById('wg').innerHTML='<g filter="url(#ft)">'+w+'</g>';
+document.getElementById('tl').innerHTML=t;
+document.getElementById('bs').innerHTML=b;
+R=seed(7);
+function bolt(x1,y1,x2,y2,d){let p=[[x1,y1],[x2,y2]];for(let k=0;k<5;k++){const q=[p[0]];for(let j=1;j<p.length;j++){const a=p[j-1],b=p[j];q.push([(a[0]+b[0])/2+(R()-.5)*d,(a[1]+b[1])/2]);q.push(b)}p=q;d/=2}return p}
+const pd=p=>'M'+p.map(a=>a[0].toFixed(1)+' '+a[1].toFixed(1)).join('L');
+const m=bolt(60,0,60,150,46),b1=m[9],b2=m[22];
+const pts=[pd(m),pd(bolt(b1[0],b1[1],b1[0]+28,b1[1]+44,18)),pd(bolt(b2[0],b2[1],b2[0]-26,b2[1]+40,16))];
+document.getElementById('stk').innerHTML=pts.map(d=>`<path d="${d}" stroke="#8fb8ff" stroke-width="10" opacity=".55" filter="url(#bl)"/><path d="${d}" stroke="#dbe9ff" stroke-width="3.2"/><path d="${d}" stroke="#fff" stroke-width="1.4"/>`).join('');
+const T=([id,sd,bl,f,k,ss,col,dp])=>`<filter id="${id}" x="-12%" y="-12%" width="124%" height="124%"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="3" seed="${sd}" result="e"/><feDisplacementMap in="SourceGraphic" in2="e" scale="${dp}" result="g"/><feGaussianBlur in="g" stdDeviation="${bl}" result="d"/><feTurbulence type="turbulence" baseFrequency="${f}" numOctaves="5" seed="${sd}" result="t"/><feColorMatrix in="t" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .8 0 0 0 0" result="ta"/><feComposite in="d" in2="ta" operator="arithmetic" k2="1.1" k3="${k}" result="h"/><feDiffuseLighting in="h" surfaceScale="${ss}" diffuseConstant="1.15" lighting-color="${col}" result="l"><feDistantLight azimuth="225" elevation="40"/></feDiffuseLighting><feComposite in="l" in2="g" operator="in"/></filter>`;
+document.getElementById('fd').innerHTML=[['rk',7,4,.09,.6,6,'#c49a78',5]].map(T).join('');
+})();
+</script>
+
+
+<main>
+<h1>🦅 Águia — direção de arte v4</h1>
+<p>Ajustes da v4: coelho em corrida com pelagem, montanhas em cadeias com relevo e cor por altitude, aves com mais penas e o gavião de cauda ruiva, chão com campos cultivados, copa de árvores e biomas distintos.</p>
+
+<div class="layout">
+<div>
+<h2>Cena de jogo (prévia com HUD)</h2>
+<svg class="hero" viewBox="0 0 450 800" role="img" aria-label="Cena vista de cima: águia sobrevoando campos e rio, com nuvem de tempestade, raio, montanhas com relevo, gavião, meteoro, joias e coelho">
+<rect width="450" height="800" fill="#3f7d3a"/>
+<rect width="450" height="800" filter="url(#ter)" opacity=".6"/>
+<rect width="450" height="800" filter="url(#ter2)" opacity=".55"/>
+<g filter="url(#ft)" stroke="#3a4a20" stroke-opacity=".5" stroke-width=".8"><path d="M20 420 120 400 140 470 30 495Z" fill="url(#pf1)"/><path d="M30 500 140 478 160 550 45 575Z" fill="url(#pf3)"/><path d="M300 60 410 45 430 120 310 140Z" fill="url(#pf2)"/><path d="M330 620 430 610 440 690 340 700Z" fill="url(#pf1)"/><path d="M255 470 330 455 345 520 265 535Z" fill="url(#pf2)"/></g>
+<rect width="450" height="800" filter="url(#fo)" opacity=".95"/>
+<path d="M300-10C250 120 380 200 330 330 290 440 120 460 150 600 170 700 260 740 240 810" fill="none" stroke="#c9b98a" stroke-width="58" stroke-linecap="round"/>
+<path d="M300-10C250 120 380 200 330 330 290 440 120 460 150 600 170 700 260 740 240 810" fill="none" stroke="#2f7fa8" stroke-width="46" stroke-linecap="round"/>
+<path d="M300-10C250 120 380 200 330 330 290 440 120 460 150 600 170 700 260 740 240 810" fill="none" stroke="#6cc0e0" stroke-width="26" stroke-linecap="round" opacity=".5"/>
+<use href="#mt" x="0" y="262" width="190" height="190" filter="url(#sh)"/>
+<use href="#mt" x="-14" y="240" width="190" height="190"/>
+
+<use href="#mt" x="318" y="320" width="150" height="150" transform="rotate(35 393 395)" filter="url(#sh)"/><use href="#mt" x="308" y="308" width="150" height="150" transform="rotate(35 383 383)"/>
+<use href="#rabbit" x="356" y="580" width="38" height="62" transform="rotate(20 375 608)" filter="url(#sh)"/><use href="#rabbit" x="350" y="570" width="38" height="62" transform="rotate(20 369 598)"/>
+<use href="#gem" x="212" y="470" width="30" height="30" style="color:#37d8ff"/>
+<use href="#gem" x="228" y="420" width="30" height="30" style="color:#ff5fa2"/>
+<use href="#gem" x="208" y="366" width="30" height="30" style="color:#5ee08a"/>
+<use href="#cloud" class="white" x="-10" y="560" width="190" height="143" filter="url(#sh)"/>
+<use href="#cloud" class="white" x="-40" y="500" width="190" height="143" opacity=".92"/>
+<use href="#cloud" class="storm" x="190" y="100" width="220" height="165" filter="url(#sh)"/>
+<use href="#cloud" class="storm" x="140" y="30" width="220" height="165"/>
+<use href="#strike" x="196" y="150" width="98" height="163"/>
+<use href="#meteor" x="20" y="40" width="96" height="160" transform="rotate(-15 68 120)"/>
+<use href="#bird" class="hawk" x="320" y="210" width="90" height="74" transform="rotate(180 365 247)"/>
+<use href="#bird" x="155" y="672" width="200" height="164" filter="url(#sh)"/>
+<use href="#bird" class="eagle" x="125" y="620" width="200" height="164"/>
+<use href="#cloud" class="white" x="320" y="690" width="160" height="120" opacity=".8"/>
+<rect width="450" height="800" fill="url(#gHz)"/>
+<rect width="450" height="800" fill="url(#gSun)"/>
+<rect width="450" height="800" filter="url(#ci)" opacity=".28"/>
+<use href="#heart" x="14" y="14" width="24" height="22"/><use href="#heart" x="42" y="14" width="24" height="22"/><use href="#heart" x="70" y="14" width="24" height="22"/><use href="#heart" x="98" y="14" width="24" height="22" opacity=".3"/>
+<text x="436" y="36" text-anchor="end" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#fff" stroke="#1b2a44" stroke-width="4" paint-order="stroke">◆ 012.450</text>
+<rect x="352" y="46" width="84" height="26" rx="13" fill="#1b2a44" opacity=".6"/>
+<text x="394" y="64" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff">NÍVEL 7</text>
+</svg>
+<p style="margin-top:10px;text-align:center">Controle: arrastar o dedo ou o mouse e a águia segue. No teclado, setas ou WASD.</p>
+</div>
+
+<div>
+<h2>Personagens e objetos</h2>
+<div class="grid">
+<figure><svg viewBox="0 0 210 86"><use href="#bird" class="eagle" x="0" y="2" width="100" height="82"/><use href="#bird2" class="eagle" x="108" y="2" width="100" height="82"/></svg><figcaption><b>Águia</b><span>Jogador · 2 quadros de bater asas</span></figcaption></figure>
+<figure><svg viewBox="0 0 110 90"><use href="#bird" class="hawk" x="5" y="4" width="100" height="82" transform="rotate(180 55 45)"/></svg><figcaption><b>Gavião sombrio</b><span>Inimigo · mergulha na direção da águia</span></figcaption></figure>
+<figure><svg viewBox="0 0 160 120"><use href="#cloud" class="storm" x="5" y="5" width="150" height="112"/></svg><figcaption><b>Nuvem de tempestade</b><span>Obstáculo · carrega e solta raios</span></figcaption></figure>
+<figure><svg viewBox="0 0 160 120"><use href="#cloud" class="white" x="5" y="5" width="150" height="112"/></svg><figcaption><b>Nuvem comum</b><span>Cenário · esconde a visão</span></figcaption></figure>
+<figure><svg viewBox="0 0 90 150"><use href="#strike" x="0" y="0" width="90" height="150"/></svg><figcaption><b>Raio e alvo</b><span>Anel avisa onde vai cair</span></figcaption></figure>
+<figure><svg viewBox="0 0 160 160"><use href="#mt" x="5" y="5" width="150" height="150"/></svg><figcaption><b>Montanha</b><span>Obstáculo fixo · tamanhos variados</span></figcaption></figure>
+<figure><svg viewBox="0 0 90 150"><use href="#meteor" x="0" y="0" width="90" height="150"/></svg><figcaption><b>Meteoro</b><span>Dano · a partir do nível 13</span></figcaption></figure>
+<figure><svg viewBox="0 0 140 46"><use href="#gem" x="2" y="3" width="40" height="40" style="color:#37d8ff"/><use href="#gem" x="50" y="3" width="40" height="40" style="color:#ff5fa2"/><use href="#gem" x="98" y="3" width="40" height="40" style="color:#5ee08a"/></svg><figcaption><b>Joias</b><span>Pontos · azul 10, rosa 25, verde 50</span></figcaption></figure>
+<figure><svg viewBox="0 0 70 108"><use href="#rabbit" x="5" y="3" width="60" height="98"/></svg><figcaption><b>Coelho</b><span>Caça · regenera 1 coração</span></figcaption></figure>
+<figure><svg viewBox="0 0 50 46"><use href="#heart" x="5" y="3" width="40" height="38"/></svg><figcaption><b>Vida</b><span>Coração no HUD</span></figcaption></figure>
+</div>
+</div>
+</div>
+
+<h2 style="margin-top:28px">Cenários vistos de cima pelos 20 níveis</h2>
+<div class="themes" style="margin-top:0"><div style=""><svg viewBox="0 0 200 96" preserveAspectRatio="xMidYMid slice"><rect width="200" height="96" fill="#3f7d3a"/><rect width="200" height="96" filter="url(#ter)" opacity=".6"/><rect width="200" height="96" filter="url(#ter2)" opacity=".55"/><rect width="200" height="96" filter="url(#fo)" opacity=".7"/><path d="M-5 70C50 40 90 90 130 50S190 30 205 40" stroke="#c9b98a" stroke-width="12" fill="none"/><path d="M-5 70C50 40 90 90 130 50S190 30 205 40" stroke="#2f7fa8" stroke-width="8" fill="none"/></svg><b>Níveis 1–4</b><span>Campos e rios</span></div><div style=""><svg viewBox="0 0 200 96" preserveAspectRatio="xMidYMid slice"><rect width="200" height="96" fill="#1c3f26"/><rect width="200" height="96" filter="url(#fo)"/></svg><b>Níveis 5–8</b><span>Floresta densa</span></div><div style=""><svg viewBox="0 0 200 96" preserveAspectRatio="xMidYMid slice"><rect width="200" height="96" fill="#d9b778"/><rect width="200" height="96" filter="url(#dn)"/></svg><b>Níveis 9–12</b><span>Deserto e cânions</span></div><div style="color:#17202e;text-shadow:none"><svg viewBox="0 0 200 96" preserveAspectRatio="xMidYMid slice"><rect width="200" height="96" fill="#9db8d4"/><rect width="200" height="96" filter="url(#sn)" opacity=".9"/></svg><b>Níveis 13–16</b><span>Tundra e geleiras</span></div><div style=""><svg viewBox="0 0 200 96" preserveAspectRatio="xMidYMid slice"><rect width="200" height="96" fill="#2a1612"/><rect width="200" height="96" filter="url(#lv)"/></svg><b>Níveis 17–20</b><span>Vulcões e meteoros</span></div></div>
+</main>
+</body>
+</html>

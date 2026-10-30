@@ -1,0 +1,5 @@
+pygame-ce>=2.5
+pygbag>=0.9
+# apenas para regenerar os assets (tools/render_assets.py):
+# playwright
+# pillow
